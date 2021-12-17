@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.retro-2021-wrapper {
+    background: url(../img/retro-2021/bg-retrospectiva.jpg) no-repeat center 0;
+    position: relative;
+}
+
+.retro-2021-wrapper .timeline-wrapper {
+    position: absolute;
+    left: calc(50% - 10px);
+    transform: translateX(-50%);
+}
+
+.retro-2021-wrapper .retro {
+    font-family: 'Retro Gaming'; 
+    font-weight: normal;
+    font-style: normal;;
+}
+
+.retro-2021-wrapper .highlight {
+    color: #ffb42c;
+}
+
+.retro-2021-content-line {
+    position: relative;
+    margin-bottom: 30px;
+}
+.retro-2021-content-line-inner {
+    max-width: 1080px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    outline: solid 1px red;
+}
+
+
+.retro-2021-wrapper .intro {
+    padding-top: 85px;
+}
+
+.retro-2021-wrapper .logo img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.retro-2021-wrapper .marco {
+    margin-bottom: -70px;
+}
+
+.retro-2021-wrapper .divider-nuvens {
+    margin: 0;
+    margin-bottom: -130px;
+}
+
+.retro-2021-wrapper .maio {
+    margin-top: 545px;
+}
+
+.retro-2021-wrapper .maio .titulo {
+    margin-bottom: 30px;
+}
+
+.retro-2021-wrapper .maio p:first-child {
+    margin-bottom: 265px;
+}
+
+.retro-2021-wrapper .level-up .titulo {
+    margin-bottom: 180px;
+}
+
+.retro-2021-wrapper .happmobi-pearson {
+    margin-top: 80px;
+}
+
+.retro-2021-wrapper .happmobi-pearson img {
+    margin-bottom: 30px;
+}
+
+.retro-2021-wrapper .divider-astronauta {
+    margin-top: -300px;
+    margin-bottom: -115px;
+}
+
+.retro-2021-wrapper .agosto {
+    margin-bottom: 50px;
+}
+
+.retro-2021-wrapper .agosto .titulo {
+    margin-bottom: 60px;
+}
+
+.retro-2021-wrapper .divider-asteroids {
+    margin-bottom: 60px;
+}
+
+
+.retro-2021 .numeros-wrapper {
+    width:  630px;
+    font-size: 40px;
+    
+}
+
+.numeros-wrapper .item {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #ffd800;
+    position: relative;
+}
+
+.numeros-wrapper .item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.numeros-wrapper .number {
+    min-width: 125px;
+}
+
+.numeros-wrapper .divider {
+    position: relative;
+    flex: 1;
+    display: flex;
+    margin: 0 5px;
+}
+
+.numeros-wrapper .divider:after {
+    content: "";
+    height: 7px;
+    width: 100%;
+    background: url(../img/retro-2021/dot.png) repeat-x 0 0;
+    position: absolute;
+    bottom: 11px;
+    
+}
+
+.retro-2021-wrapper .footer {
+    height: 935px;
+    display: flex;
+    align-items: flex-end;
+}
+.retro-2021-wrapper .footer .foguete-final {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
