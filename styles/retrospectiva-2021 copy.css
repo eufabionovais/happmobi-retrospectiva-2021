@@ -13,9 +13,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     font-size: 30px;
-    line-height: 1.2;
     font-weight: bold;
 }
+
 
 .retro-2021-wrapper {
     background: url(../img/retro-2021/bg-retrospectiva.jpg) no-repeat center 0;
@@ -66,6 +66,10 @@ body {
 }
 
 
+
+
+
+
 .retro-2021-wrapper .retro {
     font-family: 'Retro Gaming'; 
     font-weight: normal;
@@ -78,23 +82,22 @@ body {
 
 .retro-2021-content-line {
     position: relative;
-    outline: solid 1px red;
 }
+
+
 
 .retro-2021-content-line-inner {
     max-width: 1080px;
     position: relative;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
+    /* outline: solid 1px red; */
 }
+
 
 .retro-2021-wrapper .intro {
     padding-top: 85px;
-    height: 1250px;
-}
-
-.retro-2021-wrapper .intro .text-content {
-    padding-top: 60px;
+    height: 1220px;
 }
 
 .retro-2021-wrapper .intro-text {
@@ -103,12 +106,15 @@ body {
     padding-left: 150px;
 }
 
+.retro-2021-wrapper .text-content {
+    padding-top: 70px;
+}
+
 .retro-2021-wrapper .intro-text p:first-child {
     font-size: 48px;
     line-height: 1.2;
     color: #ffb42c;
 }
-
 .retro-2021-wrapper .intro-text p {
     font-size: 32px;
     margin-bottom: 0;
@@ -127,19 +133,12 @@ body {
 }
 
 .retro-2021-wrapper .marco {
-    height: 735px;
-}
-
-.retro-2021-wrapper .marco .titulo-mes {
-    margin-bottom: 60px;
+    margin-bottom: -70px;
+    height: 790px;
 }
 
 .retro-2021-wrapper .marco .text-content {
     padding-top: 30px;
-}
-
-.retro-2021-wrapper .marco .text-content img {
-    transform: translate(-35px, -35px);
 }
 
 .retro-2021-wrapper .marco-fim {
@@ -151,15 +150,7 @@ body {
 }
 
 .retro-2021-wrapper .julho {
-    height: 710px;
-}
-
-.retro-2021-wrapper .julho .text-content {
-    padding: 60px 0 0 20px;
-}
-
-.retro-2021-wrapper .julho .titulo-mes {
-    margin-top: 70px;
+    height:815px;
 }
 
 .retro-2021-wrapper .computador-julho-wrapper .computador {
@@ -181,8 +172,9 @@ body {
 }
 
 .retro-2021-wrapper .divider-nuvens {
-    height: 600px;
-    margin-top: -75px;
+    margin: 0;
+    height: 515px;
+    /* margin-bottom: -130px; */
 }
 
 .retro-2021-wrapper .nuvens-wrapper {
@@ -201,6 +193,7 @@ body {
 }
 
 .retro-2021-wrapper .maio {
+    margin-top: 415px;
     height: 1240px;
 }
 
@@ -208,15 +201,16 @@ body {
     margin-bottom: 30px;
 }
 
-.retro-2021-wrapper .maio .text-content.last p {
-    margin-top: 50px;
-}
-.retro-2021-wrapper .maio .text-content.last p:last-child {
-    margin-top: 280px;
+.retro-2021-wrapper .maio p:first-child {
+    margin-bottom: 265px;
 }
 
 .retro-2021-wrapper .level-up {
     height: 375px;
+}
+
+.retro-2021-wrapper .level-up .titulo {
+    margin-bottom: 180px;
 }
 
 .retro-2021-wrapper .happmobi-pearson {
@@ -229,17 +223,14 @@ body {
 }
 
 .retro-2021-wrapper .divider-astronauta {
-    height: 870px;
-    margin-top: -310px;
-    margin-bottom: -130px;
+    margin-top: -300px;
+    margin-bottom: -75px;
+    height: 480px;
 }
 
 .retro-2021-wrapper .agosto {
-     height:825px;
-}
-
-.retro-2021-wrapper .agosto .text-content {
-    padding: 50px 0 0 80px;
+    margin-bottom: 160px;
+    height:825px;
 }
 
 .retro-2021-wrapper .agosto .fogo {
@@ -254,52 +245,32 @@ body {
 }
 
 .retro-2021-wrapper .divider-asteroids {
+    margin-bottom: 65px;
     height: 160px;
 }
 
 .retro-2021-wrapper .outubro {
-    height: 900px;
-}
-
-.retro-2021-wrapper .outubro .titulo-mes {
-    padding-left: 25px;
-}
-
-.retro-2021-wrapper .outubro .text-content {
-    padding-top: 50px;
+    margin-bottom: 230px;
+    height: 930px;
 }
 
 .retro-2021-wrapper .novembro {
-    height: 1140px;
-}
-
-.retro-2021-wrapper .novembro .titulo {
-    margin-bottom: 100px;
-}
-
-.retro-2021-wrapper .novembro img {
-    transform: translateX(10px);
-}
-
-.retro-2021-wrapper .novembro .text-content {
-    padding-top: 50px;
+    margin-bottom: 120px;
+    height: 1095px;
 }
 
 .retro-2021-wrapper .conclusoes {
+    margin-bottom: 160px;
     height: 865px;
 }
 
 .retro-2021-wrapper .numeros {
+    margin-bottom: 70px;
     height: 620px;
 }
 
-.retro-2021-wrapper .numeros .text-content {
-    padding-left: 70px;
-}
-
 .retro-2021-wrapper .numeros-wrapper {
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
     font-size: 40px;
 }
 
@@ -308,15 +279,24 @@ body {
 }
 
 .retro-2021-wrapper .habilita {
-    height: 580px;
-    padding-left: 120px;
+    height: 585px;
+}
+
+.retro-2021-wrapper .habilita img {
+    margin-bottom: 50px;
 }
 
 .retro-2021-wrapper .habilita p:last-child {
-    margin-top: 70px;
+    margin-bottom: 85px;
 }
 
+.retro-2021-wrapper .novembro .titulo {
+    margin-bottom: 100px;
+}
+
+
 .retro-2021-wrapper  .loading-2022 {
+    margin-bottom: 80px;
     height: 1365px;
 }
 
@@ -328,7 +308,8 @@ body {
 
 .retro-2021 .numeros-wrapper {
     width:  630px;
-    font-size: 40px;    
+    font-size: 40px;
+    
 }
 
 .numeros-wrapper .item {
@@ -344,7 +325,7 @@ body {
 }
 
 .numeros-wrapper .number {
-    min-width: 160px;
+    min-width: 125px;
 }
 
 .numeros-wrapper .divider {
@@ -360,7 +341,8 @@ body {
     width: 100%;
     background: url(../img/retro-2021/dot.png) repeat-x 0 0;
     position: absolute;
-    bottom: 16px;    
+    bottom: 11px;
+    
 }
 
 .retro-2021-wrapper .footer {
