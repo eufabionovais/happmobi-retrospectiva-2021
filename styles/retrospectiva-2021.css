@@ -16,21 +16,59 @@ body {
     font-weight: bold;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
 
 .retro-2021-wrapper {
     background: url(../img/retro-2021/bg-retrospectiva.jpg) no-repeat center 0;
     position: relative;
+    overflow: hidden;
+    overflow-x: hidden;
 }
 
-.retro-2021-wrapper .timeline-wrapper {
+.retro-2021-wrapper .parallax-images {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: calc(50% - 10px);
+    left: 50%;
     transform: translateX(-50%);
 }
+
+.retro-2021-wrapper img{
+    max-width: none;
+    display: block;
+}
+
+.retro-2021-wrapper .timeline-wrapper,
+.retro-2021-wrapper .bgs {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.retro-2021-wrapper .bgs  {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+}
+.retro-2021-wrapper .bgs img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.retro-2021-wrapper .bg-1 {
+    background: url(../img/retro-2021/bg-espirais.png) no-repeat center 0;
+}
+
+.retro-2021-wrapper .bg-2 {
+    background: url(../img/retro-2021/bg-small-planets.png) no-repeat center 0;
+}
+
+
+
+
+
 
 .retro-2021-wrapper .retro {
     font-family: 'Retro Gaming'; 
@@ -46,17 +84,35 @@ img {
     position: relative;
     margin-bottom: 30px;
 }
+
+
+
 .retro-2021-content-line-inner {
     max-width: 1080px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
 }
 
 
 .retro-2021-wrapper .intro {
     padding-top: 85px;
+}
+
+.retro-2021-wrapper .intro-text {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-left: 150px;
+}
+.retro-2021-wrapper .intro-text p:first-child {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #ffb42c;
+}
+.retro-2021-wrapper .intro-text p {
+    font-size: 32px;
+    margin-bottom: 0;
 }
 
 .retro-2021-wrapper .logo img {
@@ -71,13 +127,52 @@ img {
     margin-bottom: -70px;
 }
 
+.retro-2021-wrapper .computador-wrapper {
+    position: relative;
+}
+
+
+
+.retro-2021-wrapper .computador-julho-wrapper .computador {
+    position: relative;
+    z-index: 1;
+}
+
+.retro-2021-wrapper .computador-julho-wrapper .fogo {
+    position: absolute;
+    top: 100%;
+}
+
+.retro-2021-wrapper .computador-julho-wrapper .fogo-1 {
+    left: 40px;
+}
+
+.retro-2021-wrapper .computador-julho-wrapper .fogo-2 {
+    right: -40px;
+}
+
 .retro-2021-wrapper .divider-nuvens {
     margin: 0;
-    margin-bottom: -130px;
+    /* margin-bottom: -130px; */
+}
+
+.retro-2021-wrapper .nuvens-wrapper {
+    position: relative;
+}
+
+.retro-2021-wrapper .nuvens {
+    position: relative;
+    z-index: 1;
+}
+
+.retro-2021-wrapper .chuva {
+    position: absolute;
+    left: 65px;
+    top: 370px;
 }
 
 .retro-2021-wrapper .maio {
-    margin-top: 545px;
+    margin-top: 415px;
 }
 
 .retro-2021-wrapper .maio .titulo {
@@ -102,11 +197,18 @@ img {
 
 .retro-2021-wrapper .divider-astronauta {
     margin-top: -300px;
-    margin-bottom: -115px;
+    margin-bottom: -75px;
 }
 
 .retro-2021-wrapper .agosto {
-    margin-bottom: 50px;
+    margin-bottom: 160px;
+}
+
+.retro-2021-wrapper .agosto .fogo {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .retro-2021-wrapper .agosto .titulo {
@@ -117,6 +219,53 @@ img {
     margin-bottom: 60px;
 }
 
+.retro-2021-wrapper .outubro {
+    margin-bottom: 230px;
+}
+
+.retro-2021-wrapper .novembro {
+    margin-bottom: 120px;
+}
+
+.retro-2021-wrapper .conclusoes {
+    margin-bottom: 160px;
+}
+
+.retro-2021-wrapper .numeros {
+    margin-bottom: 70px;
+}
+
+.retro-2021-wrapper .numeros-wrapper {
+    margin-bottom: 85px;
+    font-size: 40px;
+}
+
+.retro-2021-wrapper .numeros p:last-child {
+    margin-bottom: 0;
+}
+
+.retro-2021-wrapper .habilita img {
+    margin-bottom: 50px;
+}
+
+.retro-2021-wrapper .habilita p:last-child {
+    margin-bottom: 85px;
+}
+
+.retro-2021-wrapper .novembro .titulo {
+    margin-bottom: 100px;
+}
+
+
+.retro-2021-wrapper  .loading-2022 {
+    margin-bottom: 80px;
+}
+
+.retro-2021-wrapper  .loading-2022 .loading {
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+}
 
 .retro-2021 .numeros-wrapper {
     width:  630px;
@@ -161,6 +310,7 @@ img {
     height: 935px;
     display: flex;
     align-items: flex-end;
+    margin-bottom: 0;
 }
 .retro-2021-wrapper .footer .foguete-final {
     position: absolute;
