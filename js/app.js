@@ -113,3 +113,43 @@
 
 
 
+gsap.registerPlugin(ScrollTrigger);
+gsap.defaults({ ease: "none" });
+
+document.addEventListener("DOMContentLoaded", function (e) {
+
+
+    const titulosMeses = document.querySelectorAll(".titulo-mes");
+    titulosMeses.forEach((element) => {
+        let tl = gsap.timeline()
+        tl.set(element, { y: 50, opacity: 0 })
+        tl.to(element, { y: 0, opacity: 1, duration: 0.5 });
+        ScrollTrigger.create({
+            trigger: element,
+            start: "top 75%",
+            end: "top 50%",
+            toggleActions: "play none none reverse",
+            animation: tl,
+            markers: true,
+            scrub: true
+        })
+    })
+
+
+    let tlLevelUp = gsap.timeline();
+    tlLevelUp.set(".level-up .titulo", { rotationY: 180, scale: 0 })
+    tlLevelUp.to(".level-up .titulo", {
+        duration: 1, rotationY: 0, scale: 1, transformOrigin: "center", scrollTrigger: {
+            trigger: ".level-up .titulo",
+            start: "top 75%",
+            end: "top 50%",
+            scrub: 1,
+        }
+    })
+
+
+
+
+
+
+});
