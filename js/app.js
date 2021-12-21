@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
         window.scrollTo(0, 0);
 
+        setTimeout(() => {
+            document.querySelector(".retro-2021-wrapper").classList.remove("preloading")
+        }, 300)
+
         let tlIntro = gsap.timeline({ delay: 0.6 });
         tlIntro.from(".logo img", { opacity: 0, duration: .8, y: -50, ease: Back.easeOut })
         tlIntro.from(".intro .intro-text", { opacity: 0, duration: .8, y: -50, ease: Back.easeOut }, "-=0.3")
