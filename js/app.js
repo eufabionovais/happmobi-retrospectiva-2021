@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
             trigger: ".footer",
 
             start: "top 80%",
-            end: "top 40%",
+            end: "bottom 100%",
             scrub: 1,
         }
     })
