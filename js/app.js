@@ -109,6 +109,14 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 scrub: 1,
             }
         })
+        tlLevelUp.from(".level-up .estrelas", {
+            duration: 1, opacity: 0, y: -100, scale: .5, scrollTrigger: {
+                trigger: ".level-up .titulo",
+                start: "top 75%",
+                end: "top 50%",
+                scrub: 1,
+            }
+        }, "+=1")
 
         gsap.set(".divider-nuvens", { xPercent: 100 });
         gsap.fromTo(".divider-nuvens .chuva", { opacity: 1, y: -20, x: 20 }, { opacity: 0, y: 15, x: 0, duration: 0.5, repeat: -1, repeatDelay: 0.5 })
@@ -123,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         })
 
         gsap.set(".divider-astronauta .planeta", { x: "-100vw" });
-        gsap.set(".divider-astronauta .astronauta", { x: "100vw" });
+        gsap.set(".divider-astronauta .astronauta", { xPercent: 100 });
         let tlDividerAstronautaPlaneta = gsap.timeline();
         tlDividerAstronautaPlaneta.to(".divider-astronauta .planeta", {
             duration: 1.2, x: "-15vw", scrollTrigger: {
@@ -136,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
         let tlDividerAstronautaBaleira = gsap.timeline();
         tlDividerAstronautaBaleira.to(".divider-astronauta .astronauta", {
-            duration: 1.2, x: "10vw", scrollTrigger: {
+            duration: 1.2, xPercent: 10, scrollTrigger: {
                 trigger: ".divider-astronauta .astronauta",
                 start: "top 150%",
                 end: "top 50%",
@@ -174,6 +182,20 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 end: "top 50%",
                 scrub: 1,
             }
+        })
+
+
+        let tlLoading2022 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".barra-loading",
+                start: "top 80%",
+                end: "top 50%",
+                scrub: 1,
+            }
+        })
+
+        tlLoading2022.from(".loading-2022 .barra-loading", {
+            width: 0, transformOrigin: "0 center", duration: 2,
         })
 
 
