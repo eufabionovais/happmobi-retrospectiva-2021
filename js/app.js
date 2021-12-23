@@ -59,19 +59,19 @@ document.addEventListener("DOMContentLoaded", function (e) {
             })
         })
 
-        const imageWrappers = document.querySelectorAll(".image-wrapper");
-        imageWrappers.forEach((element) => {
-            let tl = gsap.timeline()
-            tl.set(element, { y: 50, opacity: 0 })
-            tl.to(element, { y: 0, opacity: 1, duration: 0.3 });
-            ScrollTrigger.create({
-                trigger: element,
-                start: "top 75%",
-                end: "bottom 50%",
-                toggleActions: "play none none reverse",
-                animation: tl
-            })
-        })
+        // const imageWrappers = document.querySelectorAll(".image-wrapper");
+        // imageWrappers.forEach((element) => {
+        //     let tl = gsap.timeline()
+        //     tl.set(element, { y: 50, opacity: 0 })
+        //     tl.to(element, { y: 0, opacity: 1, duration: 0.3 });
+        //     ScrollTrigger.create({
+        //         trigger: element,
+        //         start: "top 75%",
+        //         end: "bottom 50%",
+        //         toggleActions: "play none none reverse",
+        //         animation: tl
+        //     })
+        // })
 
         const textContents = document.querySelectorAll(".text-content");
         textContents.forEach((element) => {
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
         gsap.fromTo(".divider-nuvens .chuva", { opacity: 1, y: -20, x: 20 }, { opacity: 0, y: 15, x: 0, duration: 0.5, repeat: -1, repeatDelay: 0.5 })
         let tlNuvens = gsap.timeline();
         tlNuvens.to(".divider-nuvens", {
-            duration: 1.2, xPercent: -15, scrollTrigger: {
+            duration: 1.2, xPercent: 0, scrollTrigger: {
                 trigger: ".divider-nuvens",
                 start: "top 75%",
                 end: "bottom 50%",

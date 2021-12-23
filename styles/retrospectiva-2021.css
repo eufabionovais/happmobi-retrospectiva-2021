@@ -17,7 +17,7 @@ body, html {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.2;
     font-weight: bold;
 }
@@ -361,20 +361,6 @@ body, html {
 
 
 
-/* .retro-2021-wrapper  .loading-2022 .barra-loading {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: url("../img/retro-2021/barra-loading.png") no-repeat 0 0 / contain;
-}
-
-.retro-2021-wrapper  .loading-2022 .barra-loading img {
-    opacity: 0;
-    margin: 0 auto 0;
-    max-width: 100%;
-} */
-
 .retro-2021-wrapper .loading-new-year {
     position: relative;
     display: flex;  
@@ -392,13 +378,7 @@ body, html {
      position: relative;
  }
 
- /* .retro-2021-wrapper .loading-bar-wrapper img {
-     position: absolute;
-     left: 0;
-     top: 0;
-     width: 100%;
-     height: 100%;
- } */
+
 
  .retro-2021-wrapper .loading-bar-mask {
      position: absolute;
@@ -485,9 +465,12 @@ body, html {
 @media screen and (max-width: 1140px) {
 
     .retro-2021-wrapper {
-        font-size: 24px;
+        font-size: 22px;
         padding: 0 15px;
     }
+
+    
+
     .retro-2021-wrapper .timeline-wrapper {
         display: none;
     }
@@ -527,12 +510,21 @@ body, html {
     }
 
     .retro-2021-wrapper .intro-text p {
-        font-style: 22px;
+        font-size: 18px;
     }
 
     .retro-2021-wrapper .intro-text p:first-child {
-        font-size: 36px;
+        font-size: 25px;
     }
+
+    .retro-2021-wrapper .maio .alien-vermelho {
+        display: none;
+    }
+
+    .retro-2021-wrapper .level-up .titulo {
+        margin-bottom: 30px;
+    }
+ 
 
     .retro-2021-wrapper .julho .titulo-mes {
         margin-bottom: 0;
@@ -545,6 +537,7 @@ body, html {
     .retro-2021-wrapper .agosto .text-content {
         padding: 0;
     }
+
 
     .retro-2021-wrapper .happmobi-pearson {
         height: auto;
