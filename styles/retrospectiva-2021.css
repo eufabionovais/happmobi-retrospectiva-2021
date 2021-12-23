@@ -345,24 +345,85 @@ body, html {
     height: 1295px;
 }
 
-.retro-2021-wrapper  .loading-2022 .loading {
-    transform: translateX(-50%);
-    position: relative;
-    left: 50%;
+.retro-2021-wrapper .loading-2022 .loading {
+    max-width: 515px;
+    margin: 0 auto 30px;
 }
 
-.retro-2021-wrapper  .loading-2022 .barra-loading {
+.retro-2021-wrapper .loading-bar-wrapper {
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    align-items: center;
+}
+
+
+
+/* .retro-2021-wrapper  .loading-2022 .barra-loading {
     position: absolute;
     bottom: 0;
-    left: calc(50% - 16px);
+    left: 50%;
     transform: translateX(-50%);
-    background: url("../img/retro-2021/barra-loading.png") no-repeat;
+    background: url("../img/retro-2021/barra-loading.png") no-repeat 0 0 / contain;
 }
 
 .retro-2021-wrapper  .loading-2022 .barra-loading img {
     opacity: 0;
+    margin: 0 auto 0;
+    max-width: 100%;
+} */
+
+.retro-2021-wrapper .loading-new-year {
+    position: relative;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 200px;
 }
 
+.retro-2021-wrapper .loading-titulo {
+    max-width: 500px;
+    margin: 0 auto 30px;
+ }
+
+
+ .retro-2021-wrapper .loading-bar-wrapper {
+     position: relative;
+ }
+
+ /* .retro-2021-wrapper .loading-bar-wrapper img {
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+ } */
+
+ .retro-2021-wrapper .loading-bar-mask {
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+
+.retro-2021-wrapper .loading-new-year .year {
+    max-width: 230px;
+}
+
+.retro-2021-wrapper .loading-new-year .new-year {
+    -webkit-filter: drop-shadow( 0 0 5px  rgba(255, 149, 0, .7));
+  filter: drop-shadow( 0 0 5px  rgba(255, 149, 0, .7));
+}
+
+.retro-2021-wrapper .loading-new-year .filled-bar {
+    position: absolute;
+    left: 0;
+    max-width: none;
+    height: 100%;
+}
 
 
 .retro-2021 .numeros-wrapper {
@@ -383,7 +444,7 @@ body, html {
 }
 
 .numeros-wrapper .number {
-    min-width: 160px;
+    min-width: 120px;
 }
 
 .numeros-wrapper .divider {
@@ -433,7 +494,7 @@ body, html {
 
     .retro-2021-wrapper .retro-2021-content-line {
         height: auto;
-        margin-bottom: 30px;
+        margin-bottom: 0;
     }
 
     .retro-2021-wrapper .image-wrapper img {
@@ -477,9 +538,10 @@ body, html {
         margin-bottom: 0;
     }
 
-    .retro-2021-wrapper .agosto .titulo {
+    .retro-2021-wrapper .outubro .titulo-mes {
         padding-left: 0;
     }
+
     .retro-2021-wrapper .agosto .text-content {
         padding: 0;
     }
@@ -491,11 +553,7 @@ body, html {
     .retro-2021-wrapper .happmobi-pearson .text-content {
         max-width: none;
        
-    }
-
-
-
-   
+    }   
 
     .retro-2021-wrapper .numeros .text-content {
         padding-left: 0;
@@ -531,21 +589,27 @@ body, html {
     .retro-2021-wrapper .novembro img {
         transform: none;
     }
+    .retro-2021-wrapper .loading-titulo {
+       width: 250px;
+       margin-bottom: 15px;
+    }
 
-    .retro-2021-wrapper .loading-2022 .loading {
-        position: static;
-        transform: none;
-        margin-bottom: 230px;
+    .retro-2021-wrapper .loading-new-year .year {
+        max-width: 85px;
+        margin-bottom: 0;
+    }
+
+    .retro-2021-wrapper .loading-bar-wrapper img {
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    .retro-2021-wrapper .loading-new-year .filled-bar {
+        max-width: 100%;
     }
 
     .retro-2021-wrapper .footer {
         margin-left: -15px;
         margin-right: -15px;
-    }
-
-    
-
-
-    
-    
+    }    
 }

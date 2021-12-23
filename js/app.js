@@ -187,15 +187,15 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
         let tlLoading2022 = gsap.timeline({
             scrollTrigger: {
-                trigger: ".barra-loading",
+                trigger: ".loading-bar-wrapper",
                 start: "top 80%",
                 end: "top 50%",
                 scrub: 1,
             }
         })
 
-        tlLoading2022.from(".loading-2022 .barra-loading", {
-            width: 0, transformOrigin: "0 center", duration: 2,
+        tlLoading2022.from(".loading-2022 .loading-bar-mask", {
+            width: 0, transformOrigin: "0 center", duration: 2
         })
 
 
